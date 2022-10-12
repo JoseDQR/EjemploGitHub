@@ -8,20 +8,29 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            //LAS VARIBALES 
             byte CANB, CANH, CANP;
             double APAGAR;
             string linea;
+
+            //EL METODO
             const double PRECIOB = 0.8;
             const double PRECIOH = 2;
             const double PRECIOP = 1.2;
             Console.Write("CANTIDAD DE HAMBURGUESAS :"); linea = Console.ReadLine();
             CANH = byte.Parse(linea);
+
             Console.Write("CANTIDAD DE PAPAS :"); linea = Console.ReadLine();
             CANP = byte.Parse(linea);
+
             Console.Write("CANTIDAD DE BEBIDAS :"); linea = Console.ReadLine();
             CANB = byte.Parse(linea);
+
             Console.WriteLine();
+
             APAGAR = (CANH * PRECIOH) + (CANP * PRECIOP) + (CANB * PRECIOB);
+
+            // FIN DE CONSOLA
             Console.WriteLine("VALOR A PAGAR: " + APAGAR);
             Console.Write("Pulse una Tecla:"); Console.ReadLine();
         }
